@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.row{
+    background: #0a6c9f;
+    height: 100vh;
+    position: relative;
+}
+
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.close{
+    background: #e8e8e891;
+    padding: 5px;
+    cursor: pointer;
+    width: 2%;
+    float: right;
+}
+
+
+#myPopup{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background: #0a0a0a;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+@media (max-width: 767px){
+    #myPopup{
+        width: 80%;
+    }
+
+    .close{
+        width: 4%;
+    }
+}
